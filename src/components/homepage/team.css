@@ -1,7 +1,6 @@
 .teams {
     flex-direction: column;
     justify-content: center;
-    /* padding: 3.5rem 0; */
     margin: 1.5rem 3.5rem;
   }
   
@@ -10,15 +9,10 @@
   }
   
   .team-card {
-    /* padding-right: 2px; */
     margin: 0 0.5rem;
-    /* width: 70%; */
     padding-bottom: 2rem;
     height: fit-content;
-    /* margin: 0 auto; */
-  
-    /* margin-left: 2rem; */
-    /* margin: 0 auto; */
+
   }
   
   .team-card img {
