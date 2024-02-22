@@ -7,6 +7,7 @@ import Product from "./Products";
 import ChatRoom from "./ChatRoom";
 import ChatPage from "./ChatPage";
 import { Spinner } from "../ui/Ui";
+import IconsList from "./IconList";
 
 const Index = () => {
   const [chatOpen, setChatOpen] = useState(false);
@@ -42,7 +43,14 @@ const Index = () => {
     true
   );
 
-  console.log("chat open", chatOpen);
+  console.log(
+    "chat open",
+    shortcut?.data?.items?.filter(
+      (item) => item.type === "SINGLE" && item.viewType === "TILE"
+    )
+  );
+
+  // same response as API 3??? Why??
 
   return (
     <div className="w-screen">
@@ -54,6 +62,7 @@ const Index = () => {
       ) : (
         <HeaderCarousel banners={data?.data} />
       )}
+      <IconsList />
 
       {data3?.map((data) => (
         <div
