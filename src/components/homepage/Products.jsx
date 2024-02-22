@@ -15,7 +15,6 @@ import {
 import "pure-react-carousel/dist/react-carousel.es.css";
 
 const Product = ({ teamData }) => {
-  // console.log("team data", teamData);
   const [buttonClicked, setButtonClicked] = useState("");
 
   useEffect(() => {

@@ -6,6 +6,7 @@ import Example from "../layout/Navbar";
 import Product from "./Products";
 import ChatRoom from "./ChatRoom";
 import ChatPage from "./ChatPage";
+import { Spinner } from "../ui/Ui";
 
 const Index = () => {
   const [chatOpen, setChatOpen] = useState(false);
@@ -46,7 +47,14 @@ const Index = () => {
   return (
     <div className="w-screen">
       <Example />
-      <HeaderCarousel banners={data?.data} />
+      {isLoading ? (
+        <div className="w-full flex h-1/3 justify-center items-center">
+          <Spinner />
+        </div>
+      ) : (
+        <HeaderCarousel banners={data?.data} />
+      )}
+
       {data3?.map((data) => (
         <div
           className="grid grid-cols-5 gap-4 mx-auto max-w-5xl space-y-4"

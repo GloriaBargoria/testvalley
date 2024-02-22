@@ -9,7 +9,6 @@ function ChatRoom() {
     const [channel, setChannel] = useState(null);
 
     useEffect(() => {
-        // Connect to Sendbird with a user ID and access token
         sb.connect('test_user_123', 'f93b05ff359245af400aa805bafd2a091a173064', (user, error) => {
             if (error) {
                 console.error(error);
