@@ -66,7 +66,7 @@ const Index = () => {
 
       {data3?.map((data) => (
         <div
-          className="grid grid-cols-5 gap-4 mx-auto max-w-5xl space-y-4"
+          className="md:grid md:grid-cols-5 gap-4 mx-auto max-w-5xl space-y-4"
           key={data?.id}
         >
           <div className="flex flex-col col-span-1 justify-start items-start p-4">
