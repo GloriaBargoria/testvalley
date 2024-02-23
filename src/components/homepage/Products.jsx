@@ -129,7 +129,7 @@ const Product = ({ teamData }) => {
         {teamData?.items?.map((team) => (
           <div
             key={index}
-            className=" text-valleyGray text-sm font-light drop-shadow-sm team-card grid grid-cols-2"
+            className=" text-valleyGray text-sm font-light drop-shadow-sm grid grid-cols-2"
           >
             <div>
               {team?.publication?.media?.map((item, index) => (
