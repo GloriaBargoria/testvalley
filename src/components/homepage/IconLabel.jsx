@@ -1,4 +1,3 @@
-// IconLabel component
 export const IconLabel = ({ icon: Icon, label, badge }) => {
   return (
     <div className="flex flex-col items-center mt-4">

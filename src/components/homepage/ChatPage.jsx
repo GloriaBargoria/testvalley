@@ -2,11 +2,9 @@
 import React from 'react';
 
 const ChatPage = () => {
-  // This array is just for demonstration and will be replaced with your dynamic messages.
   const messages = [
     { id: 1, text: '오늘 저녁 시간 괜찮으신가요?', sender: 'other' },
     { id: 2, text: '네! 어떤 일로 물어보시나요?', sender: 'me' },
-    // Add more messages here...
   ];
 
   return (

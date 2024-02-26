@@ -17,7 +17,7 @@ const iconsData = [
 
 const IconsList = () => {
   return (
-    <div className="flex justify-around mx-auto max-w-5xl pt-8 flex-wrap pb-4 space-x-2">
+    <div className="flex justify-start mx-auto max-w-5xl pt-8 flex-wrap pb-4 space-x-2">
       {iconsData.map((data, index) => (
         <IconLabel key={index + 1} icon={data.icon} label={data.label} badge={data.badge} />
       ))}
